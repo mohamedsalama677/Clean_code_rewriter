@@ -1,4 +1,3 @@
-# utils/llm_setup.py
 from crewai import LLM
 
 class GeminiModel:
