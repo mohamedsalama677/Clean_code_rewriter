@@ -6,7 +6,7 @@ from crewai import Agent, LLM
 
 
 
-def create_manager_agent(gemini_model):
+def create_manager_agent(model):
 
 
     manager_agent = Agent(
@@ -25,7 +25,7 @@ def create_manager_agent(gemini_model):
             "You excel at coordinating teams to produce maintainable and clean code.",
             "You ensure the highest quality standards are met by validating outputs and structuring final reports properly."
         ]),
-        llm=gemini_model.get_llm(),
+        llm=model.get_llm(),
 
         verbose=False,
         allow_delegation=True
