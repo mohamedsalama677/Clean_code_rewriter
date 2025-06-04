@@ -1,6 +1,5 @@
 crewai
 langchain_google_genai
-os
 dotenv
 yaml
 streamlit
