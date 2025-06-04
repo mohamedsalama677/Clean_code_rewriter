@@ -2,8 +2,8 @@ company:
   industry: Technology
   name: Microsoft
 model:
-  api_key: AIzaSyCD3kbNZrJByZN6j4Bsax52dvoHn2wBTxo
+  api_key: secret
   name: gemini-2.0-flash-exp
 model2:
-  api_key_grok: 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
+  api_key_grok: secret
   name: deepseek-r1-distill-llama-70b
