@@ -3,7 +3,7 @@ import os
 from crewai import Agent, LLM
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-def create_modifier_agent(gemini_model):
+def create_modifier_agent(model):
 
     
    
@@ -38,7 +38,7 @@ def create_modifier_agent(gemini_model):
         refactoring and clean code implementation. You excel at transforming messy, complex code 
         into clean, maintainable, and readable solutions while preserving functionality. You have 
         extensive experience with various design patterns and refactoring techniques.""",
-        llm=gemini_model.get_llm(),
+        llm=model.get_llm(),
         verbose=False,
         allow_delegation=False,
     )
