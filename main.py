@@ -32,5 +32,5 @@ print(x(a,b))
         f.write(str(result))
     print("Result saved to result.txt")
 
-if __name__ == "__main__":  # Fix syntax here
+if __name__ == "__main__": 
     main()
