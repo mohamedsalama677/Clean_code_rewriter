@@ -2,4 +2,5 @@ crewai
 langchain_google_genai
 dotenv
 streamlit
+pysqlite3-binary
 sys
