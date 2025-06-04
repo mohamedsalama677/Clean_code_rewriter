@@ -1,13 +1,12 @@
 # crew_make.py
 from crewai import Crew, Process
-from agents.anlyzer import create_analyst_agent
+from agents.anlayzer import create_analyst_agent
 from agents.generator import create_modifier_agent
 from agents.teacher import create_educator_agent
-from agents.manger import create_manager_agent  # Import manager agent if needed, but not used in this workflow
-# Remove unused manager import
+from agents.manager import create_manager_agent  
 from tasks.agent_tasks import analysis_task, create_refactoring_task, create_education_task
 import yaml
-from utils.llm_setup import GeminiModel, GrokModel  # Assuming this is the correct import path
+from utils.llm_setup import GeminiModel, GrokModel 
 
 def load_config():
     with open('utils/config.yaml', 'r') as f:
@@ -20,7 +19,7 @@ def run_code_improvement_workflow(code):
     analyst = create_analyst_agent(gemini_model)
     modifier = create_modifier_agent(gemini_model)
     educator = create_educator_agent(grok_model)
-    manger = create_manager_agent(grok_model)  # Import manager agent if needed, but not used in this workflow
+    manger = create_manager_agent(grok_model)  
 
     # Create tasks
     analysistask = analysis_task(analyst, code)
