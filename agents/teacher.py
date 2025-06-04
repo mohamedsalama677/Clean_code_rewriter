@@ -3,14 +3,7 @@ import os
 from crewai import Agent, LLM
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-def create_educator_agent(gemini_model):
-    # Using Gemini instead of XAI for consistency
-    # gemini_llm = LLM(
-    #     model="gemini/gemini-1.5-pro",
-    #     api_key=os.getenv("GOOGLE_API_KEY"),
-    #     temperature=0.7
-    # )
-
+def create_educator_agent(model):
 
     educator_agent = Agent(
         role="Clean Code Educator",
@@ -30,7 +23,7 @@ def create_educator_agent(gemini_model):
         in teaching clean code principles. You excel at explaining complex concepts 
         in simple, practical terms.""",
         
-        llm=gemini_model.get_llm(),
+        llm=model.get_llm(),
         verbose=False,
         allow_delegation=False,
         )
