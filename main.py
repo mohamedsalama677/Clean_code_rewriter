@@ -1,4 +1,3 @@
-# main.py
 from crew_make import run_code_improvement_workflow
 
 def main():
