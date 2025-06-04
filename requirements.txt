@@ -1,7 +1,6 @@
 crewai
 langchain_google_genai
 dotenv
-yaml
 streamlit
 re
 sqlite3-binary
