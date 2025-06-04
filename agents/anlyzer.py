@@ -6,7 +6,7 @@ from utils.llm_setup import GeminiModel
 
 
 
-def create_analyst_agent(gemini_model):
+def create_analyst_agent(model):
 
         
     analyst_agent = Agent(
@@ -45,7 +45,7 @@ def create_analyst_agent(gemini_model):
         refactoring and clean code implementation. You excel at transforming messy, complex code 
         into clean, maintainable, and readable solutions while preserving functionality. You have 
         extensive experience with various design patterns and refactoring techniques.""",
-        llm=gemini_model.get_llm(),
+        llm=model.get_llm(),
         verbose=False,
         allow_delegation=False,
     )
