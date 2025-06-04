@@ -2,7 +2,6 @@
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://cleancoderewriter.streamlit.app/)
 [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=flat&logo=github)](https://github.com/mohamedsalama677/Clean_code_rewriter)
 [![CrewAI](https://img.shields.io/badge/CrewAI-Agent_Orchestration-blue)](https://github.com/joaomdmoura/crewai)
 [![Gemini](https://img.shields.io/badge/Google_Gemini-API-yellow)](https://gemini.google.com/)
@@ -258,25 +257,6 @@ We welcome contributions! Follow these steps:
 - Complex class hierarchies might need manual refinement
 - Limited support for Python 2.x syntax
 - Asynchronous code requires special handling
-
----
-
-## Roadmap
-
-- [x] Multi-agent architecture implementation
-- [x] Gemini API + DeepSeek API integration
-- [ ] Support for additional languages (JavaScript, Java)
-- [ ] Version control integration (GitHub/GitLab)
-- [ ] Code quality metrics dashboard
-- [ ] VS Code extension
-- [ ] Batch processing for multiple files
-- [ ] Custom rule configuration
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
